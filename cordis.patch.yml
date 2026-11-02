@@ -1,0 +1,7 @@
+# dsh-longpress-shot —— bundle patch
+#
+# 把宿主半区挂进 desktop profile 的配置树。插件本体由
+# `dsh plugin --profile desktop add link:<本目录>` 登记依赖后从这里 insert。
+- insert:
+    - id: dsh-longpress-shot
+      name: dsh-longpress-shot

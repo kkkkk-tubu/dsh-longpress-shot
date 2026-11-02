@@ -1,0 +1,74 @@
+{
+  "name": "dsh-longpress-shot",
+  "version": "1.11.2",
+  "type": "module",
+  "description": "Long-press the left mouse button anywhere in the DSH UI to capture the window or a dragged region as PNG, saved to ~/.dsh/longpress-shots with a draggable preview card that sends the image straight into the composer.",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkkkk-tubu/dsh-longpress-shot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kkkkk-tubu/dsh-longpress-shot/issues"
+  },
+  "homepage": "https://github.com/kkkkk-tubu/dsh-longpress-shot#readme",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "screenshots",
+    "screenshots.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.1-rc.3": "compatible",
+        "0.3.0-rc.1": "compatible"
+      }
+    }
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.1-rc.2 <0.3.0-0 || >=0.3.0-rc.1"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh": ">=0.2.1-rc.2 <0.3.0-0 || >=0.3.0-rc.1"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "screenshot",
+    "screenshot-tool",
+    "capture",
+    "long-press",
+    "clipboard",
+    "png",
+    "region-select",
+    "windows"
+  ],
+  "os": [
+    "win32"
+  ]
+}
